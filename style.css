@@ -327,9 +327,9 @@ ul {
   border-radius: 4px 4px 0 0;
 }
 
-.aud-card__bar--sapphire  { background-color: var(--blue-sapphire); }
-.aud-card__bar--terracotta{ background-color: var(--terracotta); }
-.aud-card__bar--sage      { background-color: var(--sage); }
+.aud-card__bar--sapphire   { background-color: var(--blue-sapphire); }
+.aud-card__bar--orange-warm{ background-color: var(--orange-warm); }
+.aud-card__bar--sage       { background-color: var(--sage); }
 
 /* Card body */
 .aud-card__body {
@@ -342,8 +342,6 @@ ul {
 .aud-card__badge {
   display: inline-block;
   align-self: flex-start;
-  background-color: var(--blue-sky);
-  color: var(--blue-navy);
   font-family: var(--font-body);
   font-size: 11px;
   text-transform: uppercase;
@@ -352,6 +350,10 @@ ul {
   border-radius: 20px;
   margin-bottom: 16px;
 }
+
+.aud-card__badge--blue  { background-color: var(--blue-sky);  color: var(--blue-navy); }
+.aud-card__badge--peach { background-color: #F5C9A0;           color: #7A3D10; }
+.aud-card__badge--sage  { background-color: #C8DDD8;           color: #2D4F45; }
 
 .aud-card__headline {
   font-family: var(--font-heading);
@@ -418,6 +420,10 @@ ul {
     width: 100%;
     max-width: 320px;
   }
+
+}
+
+@media (max-width: 600px) {
 
   /* Who This Is For */
   .audience__headline {
