@@ -101,6 +101,11 @@ ul {
   color: #ffffff;
 }
 
+.btn--terracotta:hover {
+  opacity: 1;
+  background-color: #A85E42;
+}
+
 .btn--sm {
   padding: 8px 20px;
   font-size: 14px;
@@ -130,8 +135,7 @@ ul {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #ffffff;
-  border-bottom: 0.5px solid var(--blue-sky);
+  background-color: var(--blue-navy);
 }
 
 .nav__inner {
@@ -147,7 +151,7 @@ ul {
 .nav__logo {
   font-family: var(--font-heading);
   font-size: 18px;
-  color: var(--blue-navy);
+  color: #FDF6EE;
   line-height: 1.2;
   flex-shrink: 0;
 }
@@ -161,19 +165,28 @@ ul {
 .nav__text-link {
   font-family: var(--font-body);
   font-size: 15px;
-  color: var(--blue-sapphire);
+  color: var(--blue-sky);
   font-weight: 500;
-  transition: opacity 0.15s ease;
+  transition: color 0.15s ease;
 }
 
 .nav__text-link:hover {
-  opacity: 0.75;
+  color: #ffffff;
 }
 
 .nav__buttons {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.nav .btn--primary {
+  background-color: var(--orange-warm);
+}
+
+.nav .btn--primary:hover {
+  opacity: 1;
+  background-color: #C4752A;
 }
 
 /* Hamburger */
@@ -194,7 +207,7 @@ ul {
   display: block;
   width: 22px;
   height: 1.5px;
-  background-color: var(--blue-navy);
+  background-color: #ffffff;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -216,16 +229,21 @@ ul {
   align-items: flex-start;
   gap: 8px;
   padding: 16px 24px 20px;
-  border-top: 0.5px solid var(--blue-sky);
-  background-color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--blue-navy);
 }
 
 .nav__mobile-link {
   font-family: var(--font-body);
   font-size: 15px;
-  color: var(--blue-sapphire);
+  color: var(--blue-sky);
   font-weight: 500;
   padding: 6px 0;
+  transition: color 0.15s ease;
+}
+
+.nav__mobile-link:hover {
+  color: #ffffff;
 }
 
 /* ============================================================
