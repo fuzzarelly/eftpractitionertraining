@@ -21,7 +21,10 @@
 
       <nav class="nav__links" aria-label="Primary navigation">
         <a href="#guide" class="nav__text-link">Free Comparison Guide</a>
-        <a href="#enrol" class="btn btn--primary btn--sm">Enrol Now</a>
+        <div class="nav__buttons">
+          <a href="#tripwire" class="btn btn--terracotta btn--xs">Start for $7</a>
+          <a href="#enrol" class="btn btn--primary btn--sm">Enrol Now</a>
+        </div>
       </nav>
 
       <button
@@ -38,48 +41,48 @@
 
     <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true">
       <a href="#guide" class="nav__mobile-link">Free Comparison Guide</a>
+      <a href="#tripwire" class="btn btn--terracotta">Start for $7</a>
       <a href="#enrol" class="btn btn--primary">Enrol Now</a>
     </div>
   </header>
 
   <!-- ===================== HERO ===================== -->
   <section class="hero" aria-labelledby="hero-heading">
-    <div class="hero__text">
+    <div class="hero__split">
 
-      <p class="eyebrow">IICT ACCREDITED &middot; ONLINE &middot; SELF-PACED</p>
+      <div class="hero__text">
+        <p class="eyebrow">IICT ACCREDITED &middot; ONLINE &middot; SELF-PACED</p>
 
-      <h1 class="hero__headline" id="hero-heading">
-        Add EFT Tapping to your practice.<br />
-        Become certified in 3 to 6 months.
-      </h1>
+        <h1 class="hero__headline" id="hero-heading">
+          Add EFT Tapping to your practice.<br />
+          Become <span style="color: var(--terracotta);">certified</span> in 3 to 6 months.
+        </h1>
 
-      <p class="hero__sub">
-        Trusted by over 500 practitioners in 35 countries. Grounded in
-        nervous system science and traditional Chinese medicine.
-      </p>
+        <p class="hero__sub">
+          Trusted by over 500 practitioners in 35 countries. Grounded in
+          nervous system science and traditional Chinese medicine.
+        </p>
 
-      <div class="hero__ctas">
-        <a href="#enrol" class="btn btn--primary">Enrol Now</a>
-        <a href="#guide" class="btn btn--outline">Download Free Guide</a>
+        <div class="hero__ctas">
+          <a href="#enrol" class="btn btn--primary">Enrol Now</a>
+          <a href="#guide" class="btn btn--outline">Download Free Guide</a>
+        </div>
+
+        <div class="hero__gradient-bar" aria-hidden="true"></div>
       </div>
 
-      <div class="hero__gradient-bar" aria-hidden="true"></div>
-
-      <ul class="trust-bar" aria-label="Trust indicators">
-        <li class="trust-bar__chip">500+ students</li>
-        <li class="trust-bar__chip">35 countries</li>
-        <li class="trust-bar__chip">14-day guarantee</li>
-        <li class="trust-bar__chip">Lifetime access</li>
-      </ul>
+      <div class="hero__image" aria-hidden="true">
+        <img
+          src="images/hero-woman.jpg"
+          alt="Professional woman smiling confidently"
+          loading="eager"
+        />
+      </div>
 
     </div>
 
-    <div class="hero__image" aria-hidden="true">
-      <img
-        src="images/hero-woman.jpg"
-        alt="Professional woman smiling confidently"
-        loading="eager"
-      />
+    <div class="trust-bar" aria-label="Trust indicators">
+      <p>500+ students &middot; 35 countries &middot; 14-day guarantee &middot; Lifetime access</p>
     </div>
   </section>
 
