@@ -129,6 +129,44 @@ ul {
 }
 
 /* ============================================================
+   SITE BANNER
+   ============================================================ */
+.site-banner {
+  background-color: var(--blue-sapphire);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  text-align: center;
+}
+
+.site-banner__text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.site-banner__btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--blue-navy);
+  background-color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.site-banner__btn:hover {
+  opacity: 0.85;
+}
+
+/* ============================================================
    NAV
    ============================================================ */
 .nav {
