@@ -217,16 +217,30 @@ ul {
    ============================================================ */
 .hero {
   background-color: var(--blue-mist);
-  padding: 100px 24px;
+  display: flex;
+  max-height: 600px;
+  overflow: hidden;
 }
 
-.hero__inner {
-  max-width: 660px;
-  margin: 0 auto;
-  text-align: center;
+.hero__text {
+  flex: 0 0 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  padding: 60px 48px 60px 80px;
+}
+
+.hero__image {
+  flex: 0 0 40%;
+  overflow: hidden;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .hero__headline {
@@ -249,7 +263,6 @@ ul {
 .hero__ctas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 12px;
   margin-bottom: 20px;
 }
@@ -307,6 +320,16 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-bottom: 40px;
+}
+
+/* Card image */
+.aud-card__img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 8px 8px 0 0;
 }
 
 /* Card shell */
@@ -399,7 +422,20 @@ ul {
 
   /* Hero */
   .hero {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .hero__image {
+    display: none;
+  }
+
+  .hero__text {
+    flex: none;
+    width: 100%;
     padding: 72px 24px;
+    align-items: center;
+    text-align: center;
   }
 
   .hero__headline {
