@@ -135,7 +135,8 @@ ul {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--blue-navy);
+  background-color: var(--cream);
+  border-bottom: 0.5px solid var(--blue-sky);
 }
 
 .nav__inner {
@@ -151,7 +152,7 @@ ul {
 .nav__logo {
   font-family: var(--font-heading);
   font-size: 18px;
-  color: #FDF6EE;
+  color: var(--blue-navy);
   line-height: 1.2;
   flex-shrink: 0;
 }
@@ -165,13 +166,13 @@ ul {
 .nav__text-link {
   font-family: var(--font-body);
   font-size: 15px;
-  color: var(--blue-sky);
+  color: var(--blue-sapphire);
   font-weight: 500;
-  transition: color 0.15s ease;
+  transition: opacity 0.15s ease;
 }
 
 .nav__text-link:hover {
-  color: #ffffff;
+  opacity: 0.7;
 }
 
 .nav__buttons {
@@ -207,7 +208,7 @@ ul {
   display: block;
   width: 22px;
   height: 1.5px;
-  background-color: #ffffff;
+  background-color: var(--blue-navy);
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -229,28 +230,28 @@ ul {
   align-items: flex-start;
   gap: 8px;
   padding: 16px 24px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: var(--blue-navy);
+  border-top: 0.5px solid var(--blue-sky);
+  background-color: var(--cream);
 }
 
 .nav__mobile-link {
   font-family: var(--font-body);
   font-size: 15px;
-  color: var(--blue-sky);
+  color: var(--blue-sapphire);
   font-weight: 500;
   padding: 6px 0;
-  transition: color 0.15s ease;
+  transition: opacity 0.15s ease;
 }
 
 .nav__mobile-link:hover {
-  color: #ffffff;
+  opacity: 0.7;
 }
 
 /* ============================================================
    HERO
    ============================================================ */
 .hero {
-  background-color: var(--blue-mist);
+  background-color: var(--blue-navy);
   display: flex;
   flex-direction: column;
 }
@@ -283,10 +284,14 @@ ul {
   display: block;
 }
 
+.hero__text .eyebrow {
+  color: var(--blue-sky);
+}
+
 .hero__headline {
   font-family: var(--font-heading);
   font-size: 52px;
-  color: var(--blue-navy);
+  color: #ffffff;
   line-height: 1.2;
   margin-bottom: 24px;
 }
@@ -294,7 +299,7 @@ ul {
 .hero__sub {
   font-family: var(--font-body);
   font-size: 18px;
-  color: var(--charcoal);
+  color: #C8DFEF;
   max-width: 520px;
   line-height: 1.7;
   margin-bottom: 36px;
@@ -315,9 +320,32 @@ ul {
   border-radius: 2px;
 }
 
+/* Hero button overrides for dark background */
+.hero .btn--primary {
+  background-color: var(--orange-warm);
+  color: #ffffff;
+}
+
+.hero .btn--primary:hover {
+  opacity: 1;
+  background-color: #C4752A;
+}
+
+.hero .btn--outline {
+  background-color: transparent;
+  color: #C8DFEF;
+  border-color: #C8DFEF;
+}
+
+.hero .btn--outline:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* Trust bar */
 .trust-bar {
   background-color: var(--blue-navy);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding: 14px 40px;
   display: flex;
   justify-content: center;
