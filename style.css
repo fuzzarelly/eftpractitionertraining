@@ -239,3 +239,40 @@ p:last-child{margin-bottom:0}
 .footer__links{display:flex;gap:1.25rem}
 .footer__link{font-size:.8125rem;color:var(--on-dark-m)}
 .footer__link:hover{color:var(--on-dark)}
+
+/* ANNOUNCEMENT BAR */
+.announcement-bar{height:36px;background:var(--terracotta);overflow:hidden;display:flex;align-items:center}
+.announcement-bar__track{display:flex;white-space:nowrap;animation:ticker 30s linear infinite;will-change:transform}
+.announcement-bar__item{font-family:'Outfit',system-ui,sans-serif;font-size:13px;font-weight:500;color:#fff;flex-shrink:0;padding:0 4rem}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-25%)}}
+
+/* PAIN BULLET UPGRADES */
+.pain__segment--blue{border-left-color:#4A7FA5}
+.pain__segment--orange{border-left-color:var(--terracotta)}
+.pain__bullets{list-style:none;display:flex;flex-direction:column;gap:.875rem;margin:0}
+.pain__bullet{display:flex;gap:.625rem;align-items:flex-start;font-size:.8125rem;line-height:1.65;color:var(--body)}
+.pain__check{font-size:.875rem;font-weight:700;flex-shrink:0;margin-top:2px}
+
+/* TESTIMONIALS */
+.testimonials-block{background:#1A4B73;padding:5rem 0}
+.t-eyebrow{display:block;font-family:'Outfit',system-ui,sans-serif;font-size:.6875rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#C8DFEF;text-align:center;margin-bottom:.75rem}
+.testimonials-block h2{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(1.75rem,4vw,2.375rem);font-weight:400;color:#fff;text-align:center;margin-bottom:3rem;letter-spacing:-.02em}
+.t-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+@media(min-width:640px){.t-grid{grid-template-columns:repeat(3,1fr)}}
+.t-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:1.75rem;display:flex;flex-direction:column}
+.t-open-quote{display:block;font-family:'DM Serif Display',Georgia,serif;font-size:3rem;line-height:.8;color:#E8924A;margin-bottom:.5rem}
+.t-quote{font-family:'Lora',Georgia,serif;font-style:italic;font-size:1rem;color:#C8DFEF;line-height:1.8;margin-bottom:1.25rem;flex:1}
+.t-name{font-family:'Lora',Georgia,serif;font-size:.875rem;font-weight:600;color:#fff;margin-bottom:.25rem}
+.t-cred{font-size:.875rem;color:#C8DFEF}
+.t-cta-btn{display:inline-block;font-family:'Outfit',system-ui,sans-serif;font-size:.9375rem;font-weight:500;color:#C8DFEF;border:1.5px solid #C8DFEF;border-radius:8px;padding:.75rem 2rem;transition:opacity .15s}
+.t-cta-btn:hover{opacity:.85}
+
+/* HOW IT WORKS */
+.how-it-works{background:#FDF6EE;padding:5rem 0;text-align:center}
+.how-it-works h2{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(1.75rem,4vw,2.375rem);font-weight:400;color:#1A4B73;margin-bottom:3.5rem;letter-spacing:-.02em}
+.hiw-steps{display:flex;flex-direction:column;gap:2.5rem;position:relative}
+@media(min-width:640px){.hiw-steps{flex-direction:row;gap:0;align-items:flex-start}.hiw-steps::before{content:'';position:absolute;top:24px;left:12.5%;right:12.5%;height:1px;background:#C8DFEF;z-index:0}}
+.hiw-step{flex:1;display:flex;flex-direction:column;align-items:center;padding:0 .75rem;position:relative;z-index:1}
+.hiw-num{width:48px;height:48px;border-radius:50%;background:#1A4B73;color:#fff;font-family:'DM Serif Display',Georgia,serif;font-size:1.125rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:1rem;position:relative;z-index:2}
+.hiw-title{font-family:'DM Serif Display',Georgia,serif;font-size:1.125rem;font-weight:400;color:#1A4B73;text-align:center;margin-bottom:.5rem;letter-spacing:-.01em;line-height:1.3}
+.hiw-desc{font-family:'Lora',Georgia,serif;font-size:.875rem;color:var(--charcoal);line-height:1.7;text-align:center;max-width:180px;margin:0 auto}
