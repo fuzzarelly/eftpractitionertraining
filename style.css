@@ -240,11 +240,6 @@ p:last-child{margin-bottom:0}
 .footer__link{font-size:.8125rem;color:var(--on-dark-m)}
 .footer__link:hover{color:var(--on-dark)}
 
-/* ANNOUNCEMENT BAR */
-.announcement-bar{height:36px;background:var(--terracotta);overflow:hidden;display:flex;align-items:center}
-.announcement-bar__track{display:flex;white-space:nowrap;animation:ticker 30s linear infinite;will-change:transform}
-.announcement-bar__item{font-family:'Outfit',system-ui,sans-serif;font-size:13px;font-weight:500;color:#fff;flex-shrink:0;padding:0 4rem}
-@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-25%)}}
 
 /* PAIN BULLET UPGRADES */
 .pain__segment--blue{border-left-color:#4A7FA5}
