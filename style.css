@@ -160,7 +160,7 @@ p:last-child{margin-bottom:0}
 .accreditation__body p{font-size:.9375rem;margin-bottom:.875rem}
 .accreditation__insurance{background:var(--sage-light);border-left:3px solid var(--sage);padding:1rem 1.125rem;border-radius:0 var(--r) var(--r) 0;margin:1.5rem 0;font-size:.9375rem;color:var(--body)}
 .accreditation__badges{display:flex;align-items:center;gap:2rem;margin:2rem 0;flex-wrap:wrap}
-.accreditation__badge{height:90px;width:auto;object-fit:contain}
+.accreditation__badge{height:65px;width:auto;object-fit:contain}
 .accreditation__countries{margin-top:1.5rem}
 .accreditation__countries h4{font-size:.875rem;color:var(--muted);margin-bottom:.625rem;font-weight:500}
 .accreditation__country-list{font-size:.8125rem;color:var(--muted);line-height:1.9}
@@ -169,7 +169,8 @@ p:last-child{margin-bottom:0}
 .bio{background:var(--warm-white)}
 .bio__inner{display:flex;flex-direction:column;gap:1.5rem}
 @media(min-width:600px){.bio__inner{flex-direction:row;align-items:flex-start;gap:2rem}}
-.bio__photo img{width:110px;height:110px;border-radius:50%;object-fit:cover;border:3px solid var(--stone)}
+.bio__photo{flex-shrink:0}
+.bio__photo img{width:110px;height:110px;border-radius:50%;object-fit:cover;border:3px solid var(--stone);display:block}
 @media(min-width:600px){.bio__photo img{width:140px;height:140px}}
 .bio__name{font-family:'Outfit',system-ui,sans-serif;font-size:1rem;font-weight:500;color:var(--charcoal);margin-bottom:.2rem}
 .bio__role{font-size:.875rem;color:var(--muted);margin-bottom:1rem}
@@ -259,6 +260,8 @@ p:last-child{margin-bottom:0}
 .t-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:1.75rem;display:flex;flex-direction:column}
 .t-open-quote{display:block;font-family:'DM Serif Display',Georgia,serif;font-size:3rem;line-height:.8;color:#E8924A;margin-bottom:.5rem}
 .t-quote{font-family:'Lora',Georgia,serif;font-style:italic;font-size:1rem;color:#C8DFEF;line-height:1.8;margin-bottom:1.25rem;flex:1}
+.t-author{display:flex;align-items:center;gap:.75rem;margin-top:auto;padding-top:1.25rem}
+.t-photo{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .t-name{font-family:'Lora',Georgia,serif;font-size:.875rem;font-weight:600;color:#fff;margin-bottom:.25rem}
 .t-cred{font-size:.875rem;color:#C8DFEF}
 .t-cta-btn{display:inline-block;font-family:'Outfit',system-ui,sans-serif;font-size:.9375rem;font-weight:500;color:#C8DFEF;border:1.5px solid #C8DFEF;border-radius:8px;padding:.75rem 2rem;transition:opacity .15s}
