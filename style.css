@@ -159,6 +159,8 @@ p:last-child{margin-bottom:0}
 .accreditation{background:var(--stone)}
 .accreditation__body p{font-size:.9375rem;margin-bottom:.875rem}
 .accreditation__insurance{background:var(--sage-light);border-left:3px solid var(--sage);padding:1rem 1.125rem;border-radius:0 var(--r) var(--r) 0;margin:1.5rem 0;font-size:.9375rem;color:var(--body)}
+.accreditation__badges{display:flex;align-items:center;gap:2rem;margin:2rem 0;flex-wrap:wrap}
+.accreditation__badge{height:90px;width:auto;object-fit:contain}
 .accreditation__countries{margin-top:1.5rem}
 .accreditation__countries h4{font-size:.875rem;color:var(--muted);margin-bottom:.625rem;font-weight:500}
 .accreditation__country-list{font-size:.8125rem;color:var(--muted);line-height:1.9}

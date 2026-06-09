@@ -1,23 +1,20 @@
-(function(){
-  var hamburger=document.querySelector('.nav__hamburger');
-  var mobileNav=document.querySelector('.nav__mobile');
-  if(hamburger&&mobileNav){
-    hamburger.addEventListener('click',function(){
-      var isOpen=mobileNav.classList.toggle('is-open');
-      hamburger.setAttribute('aria-expanded',String(isOpen));
-    });
-    mobileNav.querySelectorAll('a').forEach(function(link){
-      link.addEventListener('click',function(){
-        mobileNav.classList.remove('is-open');
-        hamburger.setAttribute('aria-expanded','false');
-      });
-    });
-  }
-  document.querySelectorAll('.faq__item').forEach(function(item){
-    var btn=item.querySelector('.faq__question');
-    if(btn){btn.addEventListener('click',function(){
-      var isOpen=item.classList.toggle('is-open');
-      btn.setAttribute('aria-expanded',String(isOpen));
-    });}
+const nav = document.querySelector('.nav');
+const hamburger = document.querySelector('.nav__hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('nav--open');
+  hamburger.setAttribute('aria-expanded', isOpen);
+  mobileMenu.setAttribute('aria-hidden', !isOpen);
+  mobileMenu.style.display = isOpen ? 'flex' : '';
+});
+
+// Close mobile menu when a link inside it is clicked
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('nav--open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+    mobileMenu.style.display = '';
   });
-})();
+});
