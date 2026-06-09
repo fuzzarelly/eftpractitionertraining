@@ -34,7 +34,7 @@ button{font-family:inherit;cursor:pointer}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 
 .container{width:100%;max-width:var(--max-w);margin:0 auto;padding:0 1.25rem}
-.section{padding:3.5rem 0}
+.section{padding:3.5rem 0;text-align:center}
 @media(min-width:640px){.section{padding:5rem 0}}
 
 .label{display:block;font-family:'Outfit',system-ui,sans-serif;font-size:.6875rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:.625rem}
@@ -54,7 +54,7 @@ p:last-child{margin-bottom:0}
 .btn--ghost-light{background:transparent;color:var(--on-dark);border-color:rgba(250,247,243,.3)}
 .btn--ghost-dark{background:transparent;color:var(--slate);border-color:rgba(43,61,80,.28)}
 .btn--white{background:var(--warm-white);color:var(--terracotta);border-color:var(--warm-white)}
-.cta-group{display:flex;flex-wrap:wrap;gap:.625rem}
+.cta-group{display:flex;flex-wrap:wrap;gap:.625rem;justify-content:center}
 
 /* NAV */
 .nav{position:sticky;top:0;z-index:100;background:var(--slate-dark);border-bottom:1px solid rgba(250,247,243,.07)}
@@ -159,7 +159,7 @@ p:last-child{margin-bottom:0}
 .accreditation{background:var(--stone)}
 .accreditation__body p{font-size:.9375rem;margin-bottom:.875rem}
 .accreditation__insurance{background:var(--sage-light);border-left:3px solid var(--sage);padding:1rem 1.125rem;border-radius:0 var(--r) var(--r) 0;margin:1.5rem 0;font-size:.9375rem;color:var(--body)}
-.accreditation__badges{display:flex;align-items:center;gap:2rem;margin:2rem 0;flex-wrap:wrap}
+.accreditation__badges{display:flex;align-items:center;gap:2rem;margin:2rem 0;flex-wrap:wrap;justify-content:center}
 .accreditation__badge{height:65px;width:auto;object-fit:contain}
 .accreditation__countries{margin-top:1.5rem}
 .accreditation__countries h4{font-size:.875rem;color:var(--muted);margin-bottom:.625rem;font-weight:500}
@@ -276,3 +276,18 @@ p:last-child{margin-bottom:0}
 .hiw-num{width:48px;height:48px;border-radius:50%;background:#1A4B73;color:#fff;font-family:'DM Serif Display',Georgia,serif;font-size:1.125rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-bottom:1rem;position:relative;z-index:2}
 .hiw-title{font-family:'DM Serif Display',Georgia,serif;font-size:1.125rem;font-weight:400;color:#1A4B73;text-align:center;margin-bottom:.5rem;letter-spacing:-.01em;line-height:1.3}
 .hiw-desc{font-family:'Lora',Georgia,serif;font-size:.875rem;color:var(--charcoal);line-height:1.7;text-align:center;max-width:180px;margin:0 auto}
+
+/* LEFT-ALIGN OVERRIDES — elements that must not inherit .section centering */
+.pain__bullet,.pain__bullet div{text-align:left}
+.deliverables__item{text-align:left}
+.not-for__item{text-align:left}
+.faq__question{text-align:left}
+.faq__answer{text-align:left}
+.proof__card-text{text-align:left}
+.proof__card-author{text-align:left}
+.proof__quote{text-align:left}
+.bonus{text-align:left}
+.bio__content{text-align:left}
+.accreditation__insurance{text-align:left}
+.accreditation__country-list{text-align:left}
+.guide__content{text-align:left}
