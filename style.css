@@ -285,14 +285,6 @@ p:last-child{margin-bottom:0}
 .hiw-title{font-family:'DM Serif Display',Georgia,serif;font-size:1.125rem;font-weight:400;color:#1A4B73;text-align:center;margin-bottom:.5rem;letter-spacing:-.01em;line-height:1.3}
 .hiw-desc{font-family:'Lora',Georgia,serif;font-size:.875rem;color:var(--charcoal);line-height:1.7;text-align:center;max-width:180px;margin:0 auto}
 
-/* GENERATED IMAGES */
-.pain__banner-img{width:100%;max-height:380px;object-fit:cover;border-radius:10px;margin-bottom:2rem}
-.t-banner-img{width:100%;max-height:400px;object-fit:cover;border-radius:10px;margin-bottom:2.5rem}
-.hiw__img{width:100%;max-height:320px;object-fit:cover;border-radius:10px;margin-top:2.5rem;display:block}
-.deliverables__hero-body{flex:1}
-.deliverables__hero-img{width:100%;border-radius:8px;object-fit:cover;aspect-ratio:4/3;margin-top:1.25rem}
-@media(min-width:640px){.deliverables__hero{display:flex;gap:1.75rem;align-items:center}.deliverables__hero-img{width:240px;aspect-ratio:3/4;margin-top:0;flex-shrink:0}}
-
 /* LEFT-ALIGN OVERRIDES — elements that must not inherit .section centering */
 .pain__bullet,.pain__bullet div{text-align:left}
 .deliverables__item{text-align:left}
