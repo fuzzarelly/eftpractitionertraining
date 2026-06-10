@@ -32,12 +32,14 @@
         revealObs.unobserve(entry.target);
       }
     });
-  },{threshold:0.15});
+  },{threshold:0.1});
   document.querySelectorAll('.reveal').forEach(function(el){revealObs.observe(el);});
 
   function animateCounter(el){
     var target=parseInt(el.getAttribute('data-target'));
-    var step=target/125;
+    var duration=1800;
+    var steps=Math.round(duration/16);
+    var step=target/steps;
     var current=0;
     var timer=setInterval(function(){
       current+=step;
@@ -54,7 +56,7 @@
           cObs.unobserve(entry.target);
         }
       });
-    },{threshold:0.3});
+    },{threshold:0.1});
     cObs.observe(statsEl);
   }
 })();
