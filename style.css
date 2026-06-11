@@ -292,11 +292,13 @@ p:last-child{margin-bottom:0}
 .reveal-delay-2{transition-delay:.2s}
 .reveal-delay-3{transition-delay:.3s}
 .reveal-delay-4{transition-delay:.4s}
+.reveal-delay-5{transition-delay:.5s}
+.reveal-delay-6{transition-delay:.6s}
 
 /* STATS BAND */
 .stats-band{background:#1A4B73;padding:3rem 1.25rem}
 .stats-band__grid{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem 1.5rem}
-@media(min-width:640px){.stats-band__grid{grid-template-columns:repeat(4,1fr);gap:0 2rem}}
+@media(min-width:640px){.stats-band__grid{grid-template-columns:repeat(3,1fr);gap:2.5rem 2rem}}
 .stat-block{text-align:center}
 .stat-block__icon{width:28px;height:28px;color:#E8924A;display:block;margin:0 auto 1rem}
 .stat-block__number{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(2.25rem,5vw,3.25rem);color:#fff;line-height:1;margin-bottom:0;display:flex;align-items:baseline;justify-content:center}
