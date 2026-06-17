@@ -652,12 +652,9 @@
       <p class="guide__sub">Download the EFT Schools Comparison Guide, a 10-page PDF comparing the top 5 EFT schools on price, accreditation, style, special features, and guarantee policies. Free, no strings attached.</p>
     </div>
     <div class="guide__form reveal reveal-delay-1">
-      <!--
-        SENDFOX EMBED: Replace this form with your SendFox embed code.
-        Tag source as 'comparison-guide' to distinguish from $7 buyers.
-        See Website Build Checklist, Phase 2.
-      -->
-      <form class="guide__form-inner" action="#" method="post" aria-label="Get the EFT Comparison Guide">
+      <form class="guide__form-inner sendfox-form" id="1jl7p8" action="https://sendfox.com/form/m44x5n/1jl7p8" method="post" data-async="true" data-recaptcha="true" aria-label="Get the EFT Comparison Guide">
+        <label for="guide-first-name" class="sr-only">First name</label>
+        <input id="guide-first-name" class="guide__input" type="text" name="first_name" placeholder="First name" required autocomplete="given-name">
         <label for="guide-email" class="sr-only">Your email address</label>
         <input id="guide-email" class="guide__input" type="email" name="email" placeholder="Your email address" required autocomplete="email">
         <button type="submit" class="guide__submit">Send me the guide</button>
@@ -683,5 +680,21 @@
 
 <script src="main.js?v=2"></script>
 <script>lucide.createIcons();</script>
+<script>
+  // Intercept fetch to detect SendFox success and redirect to thank you page
+  (function() {
+    var _fetch = window.fetch;
+    window.fetch = function() {
+      var args = arguments;
+      return _fetch.apply(this, args).then(function(response) {
+        if (args[0] && String(args[0]).indexOf('sendfox.com') !== -1 && response.ok) {
+          setTimeout(function() { window.location.href = '/thankyou.html'; }, 400);
+        }
+        return response;
+      });
+    };
+  })();
+</script>
+<script src="https://sendfox.com/js/form.js"></script>
 </body>
 </html>
