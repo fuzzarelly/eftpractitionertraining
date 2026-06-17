@@ -654,10 +654,12 @@
     </div>
     <div class="guide__form reveal reveal-delay-1">
       <form class="guide__form-inner sendfox-form" id="1jl7p8" action="https://sendfox.com/form/m44x5n/1jl7p8" method="post" data-async="true" data-recaptcha="true" aria-label="Get the EFT Comparison Guide">
-        <label for="guide-first-name" class="sr-only">First name</label>
-        <input id="guide-first-name" class="guide__input" type="text" name="first_name" placeholder="First name" required autocomplete="given-name">
-        <label for="guide-email" class="sr-only">Your email address</label>
-        <input id="guide-email" class="guide__input" type="email" name="email" placeholder="Your email address" required autocomplete="email">
+        <label for="sendfox_form_name" class="sr-only">First Name</label>
+        <input id="sendfox_form_name" class="guide__input" type="text" name="first_name" placeholder="First name" required autocomplete="given-name">
+        <label for="sendfox_form_email" class="sr-only">Email</label>
+        <input id="sendfox_form_email" class="guide__input" type="email" name="email" placeholder="Your email address" required autocomplete="email">
+        <!-- no botz please -->
+        <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off"></div>
         <button type="submit" class="guide__submit">Send me the guide</button>
         <p class="guide__privacy">No spam. Unsubscribe any time.</p>
       </form>
@@ -696,6 +698,6 @@
     };
   })();
 </script>
-<script src="https://sendfox.com/js/form.js"></script>
+<script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
 </body>
 </html>
