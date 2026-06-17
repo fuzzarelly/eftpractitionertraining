@@ -650,7 +650,7 @@
       <span class="label reveal">Free download</span>
       <h2 id="guide-h2" class="reveal">Not sure which EFT school is right for you?</h2>
       <p class="guide__sub">Download the EFT Schools Comparison Guide, a 10-page PDF comparing the top 5 EFT schools on price, accreditation, style, special features, and guarantee policies. Free, no strings attached.</p>
-      <img src="assets/comparison-guide-image.png" alt="EFT Schools Comparison Guide preview" style="width:180px;max-width:100%;border-radius:8px;box-shadow:0 4px 16px rgba(43,61,80,.15);margin-top:1.25rem;">
+      <img src="assets/comparison-guide-image.png" alt="EFT Schools Comparison Guide preview" style="width:280px;max-width:100%;border-radius:8px;box-shadow:0 4px 16px rgba(43,61,80,.15);margin-top:1.25rem;">
     </div>
     <div class="guide__form reveal reveal-delay-1">
       <form class="guide__form-inner sendfox-form" id="1jl7p8" action="https://sendfox.com/form/m44x5n/1jl7p8" method="post" data-async="true" data-recaptcha="true" aria-label="Get the EFT Comparison Guide">
@@ -683,21 +683,6 @@
 
 <script src="main.js?v=2"></script>
 <script>lucide.createIcons();</script>
-<script>
-  // Intercept fetch to detect SendFox success and redirect to thank you page
-  (function() {
-    var _fetch = window.fetch;
-    window.fetch = function() {
-      var args = arguments;
-      return _fetch.apply(this, args).then(function(response) {
-        if (args[0] && String(args[0]).indexOf('sendfox.com') !== -1 && response.ok) {
-          setTimeout(function() { window.location.href = '/thankyou.html'; }, 400);
-        }
-        return response;
-      });
-    };
-  })();
-</script>
 <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
 </body>
 </html>
