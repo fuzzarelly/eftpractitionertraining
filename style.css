@@ -171,8 +171,16 @@ p:last-child{margin-bottom:0}
 .accreditation{background:#fff}
 .accreditation__body p{font-size:.9375rem;margin-bottom:.875rem}
 .accreditation__insurance{background:var(--sage-light);border-left:3px solid var(--sage);padding:1rem 1.125rem;border-radius:0 var(--r) var(--r) 0;margin:1.5rem 0;font-size:.9375rem;color:var(--body)}
-.accreditation__badges{display:flex;align-items:center;gap:2rem;margin:2rem 0;flex-wrap:wrap;justify-content:center;background:#fff;padding:2rem;border-radius:var(--r-lg)}
-.accreditation__badge{height:150px;width:auto;object-fit:contain}
+.accreditation__main{display:flex;flex-direction:column;gap:2rem;margin:2rem 0}
+.accreditation__badges-col{display:flex;flex-direction:column;align-items:center}
+.accreditation__badges{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;justify-content:center;background:#fff;padding:2rem;border-radius:var(--r-lg);border:.5px solid var(--border)}
+.accreditation__badge{height:180px;width:auto;object-fit:contain}
+.accred-pills{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-top:1rem}
+.accred-pill{font-size:.75rem;font-weight:500;color:var(--body);background:var(--cream);border:.5px solid var(--border);border-radius:100px;padding:.3rem .75rem}
+.accreditation__cert{flex:1;min-width:0}
+.accreditation__cert-label{font-size:.75rem;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem}
+.accreditation__cert-img{width:100%;border-radius:var(--r);border:.5px solid var(--border);display:block}
+@media(min-width:640px){.accreditation__main{flex-direction:row;align-items:flex-start}.accreditation__badges-col{flex:0 0 auto}}
 .accreditation__countries{margin-top:1.5rem}
 .accreditation__countries h4{font-size:.875rem;color:var(--muted);margin-bottom:.625rem;font-weight:500}
 .accreditation__country-list{font-size:.8125rem;color:var(--muted);line-height:1.9}
@@ -324,4 +332,5 @@ p:last-child{margin-bottom:0}
 .bio__content{text-align:left}
 .accreditation__insurance{text-align:left}
 .accreditation__country-list{text-align:left}
+.accreditation__cert-label{text-align:left}
 .guide__content{text-align:left}
