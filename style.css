@@ -171,18 +171,22 @@ p:last-child{margin-bottom:0}
 .accreditation{background:#fff}
 .accreditation__body p{font-size:.9375rem;margin-bottom:.875rem}
 .accreditation__insurance{background:var(--sage-light);border-left:3px solid var(--sage);padding:1rem 1.125rem;border-radius:0 var(--r) var(--r) 0;margin:1.5rem 0;font-size:.9375rem;color:var(--body)}
-.accreditation__main{display:flex;flex-direction:column;gap:2rem;margin:2rem 0}
+.accreditation__main{display:flex;flex-direction:column;gap:2rem;margin:2rem 0;align-items:center}
 .accreditation__badges{display:flex;align-items:center;justify-content:center;background:#fff;padding:2rem;border-radius:var(--r-lg);border:.5px solid var(--stone-mid)}
 .accreditation__badge{height:180px;width:auto;object-fit:contain}
-.accreditation__cert{flex:1;min-width:0}
-.accreditation__cert-img{width:100%;border-radius:var(--r);border:.5px solid var(--stone-mid);display:block}
+.accreditation__cert{flex:0 0 auto}
+.accreditation__cert-img{max-height:244px;width:auto;border-radius:var(--r);border:.5px solid var(--stone-mid);display:block}
+.accred-multimodal{display:flex;gap:1rem;align-items:flex-start;background:var(--sage-light);border-left:3px solid var(--sage);border-radius:0 var(--r) var(--r) 0;padding:1rem 1.125rem;margin:1.5rem 0;text-align:left}
+.accred-multimodal__icon{width:24px;height:24px;color:var(--sage);flex-shrink:0;margin-top:.15rem}
+.accred-multimodal strong{font-size:.9375rem;color:var(--body)}
+.accred-multimodal p{font-size:.875rem;color:var(--muted);margin-top:.3rem;line-height:1.6}
 .accred-cards{display:grid;grid-template-columns:1fr;gap:1rem;margin:2rem 0}
 .accred-card{background:var(--stone);border:.5px solid var(--stone-mid);border-radius:var(--r-lg);padding:2.5rem 2rem;text-align:center;transition:transform .25s ease}
 .accred-card:hover{transform:translateY(-4px)}
 .accred-card__icon{width:40px;height:40px;color:var(--sage);display:block;margin:0 auto 1.25rem}
 .accred-card__stat{font-size:1.875rem;font-weight:500;color:var(--slate);display:block;margin-bottom:.625rem}
 .accred-card__label{font-size:.875rem;color:var(--muted);margin:0;line-height:1.55}
-@media(min-width:640px){.accreditation__main{flex-direction:row;align-items:flex-start}.accreditation__badges{flex:0 0 auto}.accred-cards{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:640px){.accreditation__main{flex-direction:row;align-items:center;justify-content:center}.accred-cards{grid-template-columns:repeat(3,1fr)}}
 .accreditation__countries{margin-top:1.5rem}
 .accreditation__countries h4{font-size:.875rem;color:var(--muted);margin-bottom:.625rem;font-weight:500}
 .accreditation__country-list{font-size:.8125rem;color:var(--muted);line-height:1.9}
