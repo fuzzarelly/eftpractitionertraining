@@ -175,7 +175,7 @@ p:last-child{margin-bottom:0}
 .accreditation__badges{display:flex;align-items:center;justify-content:center;background:#fff;padding:2rem;border-radius:var(--r-lg);border:.5px solid var(--stone-mid)}
 .accreditation__badge{height:180px;width:auto;object-fit:contain}
 .accreditation__cert{flex:0 0 auto}
-.accreditation__cert-img{max-height:244px;width:auto;border-radius:var(--r);border:.5px solid var(--stone-mid);display:block}
+.accreditation__cert-img{max-height:160px;width:auto;border-radius:var(--r);border:.5px solid var(--stone-mid);display:block}
 .accred-multimodal{display:flex;gap:1rem;align-items:flex-start;background:var(--sage-light);border-left:3px solid var(--sage);border-radius:0 var(--r) var(--r) 0;padding:1rem 1.125rem;margin:1.5rem 0;text-align:left}
 .accred-multimodal__icon{width:24px;height:24px;color:var(--sage);flex-shrink:0;margin-top:.15rem}
 .accred-multimodal strong{font-size:.9375rem;color:var(--body)}
