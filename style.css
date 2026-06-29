@@ -131,9 +131,9 @@ p:last-child{margin-bottom:0}
 .proof__role{font-size:.8rem;color:var(--muted)}
 .proof__experts{border-top:1px solid var(--stone);padding-top:2rem}
 .proof__experts .label{margin-bottom:1rem}
-.proof__quote{border-left:3px solid var(--sage-light);padding:.875rem 0 .875rem 1.25rem;margin-bottom:.875rem}
+.proof__quote{border-top:1px solid var(--stone);padding:.875rem 0;margin-bottom:.875rem;text-align:center}
 .proof__quote p{font-size:.9375rem;font-style:italic;color:var(--body);margin-bottom:.375rem}
-.proof__quote cite{font-size:.8125rem;color:var(--muted);font-style:normal}
+.proof__quote cite{font-size:.875rem;color:var(--muted);font-style:normal;font-weight:700}
 
 /* DELIVERABLES */
 .deliverables{background:var(--slate)}
@@ -260,6 +260,12 @@ p:last-child{margin-bottom:0}
 .guide__submit:hover{opacity:.88}
 .guide__privacy{font-size:.75rem;color:var(--muted)}
 
+/* TESTIMONIALS WALL */
+.testimonials-wall{background:var(--cream)}
+.testimonials-wall .container{text-align:center}
+.testimonials-wall h2{margin-bottom:2rem}
+.testimonials-wall__embed{max-width:960px;margin:0 auto;border-radius:12px;overflow:hidden}
+
 /* FOOTER */
 .footer{background:var(--slate-dark);padding:1.75rem 0}
 .footer .container{display:flex;flex-direction:column;gap:.5rem}
@@ -334,7 +340,7 @@ p:last-child{margin-bottom:0}
 .faq__answer{text-align:left}
 .proof__card-text{text-align:left}
 .proof__card-author{text-align:left}
-.proof__quote{text-align:left}
+.proof__quote{text-align:center}
 .bio__content{text-align:left}
 .accreditation__insurance{text-align:left}
 .guide__content{text-align:left}
