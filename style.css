@@ -332,6 +332,56 @@ p:last-child{margin-bottom:0}
 /* WAVE SEPARATORS */
 .wave-sep{display:block;line-height:0;font-size:0}
 
+/* QUIZ PAGE */
+.quiz{background:var(--warm-white)}
+.quiz-wrap{max-width:600px;margin:0 auto}
+.quiz-header{text-align:center;margin-bottom:2rem}
+.quiz-subtext{font-size:.9375rem;color:var(--muted);max-width:460px;margin:0 auto}
+.quiz-progress{margin-bottom:1.75rem}
+.quiz-progress__label{font-size:.8125rem;color:var(--muted);display:block;margin-bottom:.5rem}
+.quiz-progress__track{width:100%;height:6px;background:var(--stone);border-radius:50px;overflow:hidden}
+.quiz-progress__fill{height:100%;background:var(--sage);border-radius:50px;width:0;transition:width .4s ease}
+.quiz-card{background:#fff;border:.5px solid var(--stone-mid);border-radius:var(--r-lg);padding:2rem 1.75rem;margin-bottom:1.5rem;opacity:1;transition:opacity .3s ease}
+@media(min-width:640px){.quiz-card{padding:2.5rem 2.25rem}}
+.quiz-card.is-fading{opacity:0}
+.quiz-question{font-family:'Outfit',system-ui,sans-serif;font-weight:500;font-size:1.0625rem;color:var(--charcoal);text-align:center;margin-bottom:1.5rem;line-height:1.4}
+@media(min-width:640px){.quiz-question{font-size:1.1875rem}}
+.quiz-options{display:flex;flex-direction:column;gap:.625rem}
+.quiz-option{width:100%;background:var(--warm-white);border:1.5px solid var(--stone-mid);border-radius:var(--r);padding:.875rem 1.125rem;font-family:'DM Sans',system-ui,sans-serif;font-size:.9375rem;color:var(--charcoal);text-align:left;cursor:pointer;transition:border-color .15s,background .15s;display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:50px}
+.quiz-option:hover{border-color:var(--sage);background:var(--sage-light)}
+.quiz-option.is-selected{border-color:var(--sage);background:var(--sage-light)}
+.quiz-option__check{width:18px;height:18px;flex-shrink:0;display:none}
+.quiz-option.is-selected .quiz-option__check{display:block}
+.quiz-result{display:none;background:#fff;border:.5px solid var(--stone-mid);border-radius:var(--r-lg);padding:2.25rem 1.75rem;text-align:center;opacity:0;transition:opacity .3s ease}
+@media(min-width:640px){.quiz-result{padding:2.75rem 2.5rem}}
+.quiz-result.is-visible{display:block}
+.quiz-result.is-shown{opacity:1}
+.quiz-result__icon{display:block;margin:0 auto 1.125rem}
+.quiz-result h2{font-size:1.375rem;margin-bottom:.875rem}
+.quiz-result__body{font-size:.9375rem;color:var(--body);line-height:1.75;text-align:left;margin-bottom:1.5rem}
+.quiz-result__body p+p{margin-top:.875rem}
+.quiz-result .cta-group{justify-content:center}
+.quiz-result__note{display:block;font-size:.8125rem;color:var(--muted);margin-top:1rem;font-style:italic}
+.quiz-footer{text-align:center;margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--stone)}
+.quiz-footer p{font-size:.8125rem;color:var(--muted);margin-bottom:.5rem}
+.quiz-footer a{color:var(--sage);font-size:.8125rem}
+.quiz-footer a:hover{text-decoration:underline}
+
+/* EXIT / TIMED POPUP */
+.popup-overlay{position:fixed;inset:0;background:rgba(28,40,48,.55);display:none;align-items:center;justify-content:center;padding:1.25rem;z-index:200;opacity:0;transition:opacity .25s ease}
+.popup-overlay.is-open{display:flex}
+.popup-overlay.is-visible{opacity:1}
+.popup-box{background:var(--warm-white);border-radius:var(--r-lg);max-width:420px;width:100%;padding:2.25rem 1.875rem;text-align:center;position:relative;border:1px solid var(--stone-mid);transform:translateY(12px);transition:transform .25s ease}
+.popup-overlay.is-visible .popup-box{transform:translateY(0)}
+.popup-close{position:absolute;top:.75rem;right:.75rem;width:28px;height:28px;border:none;background:var(--stone);color:var(--muted);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;line-height:1;padding:0}
+.popup-close:hover{background:var(--stone-mid)}
+.popup-box .label{margin-bottom:.625rem}
+.popup-box h3{font-size:1.25rem;margin-bottom:.625rem}
+.popup-box p{font-size:.9375rem;color:var(--muted);margin-bottom:1.5rem}
+.popup-box .btn{width:100%}
+.popup-box__skip{display:block;margin-top:.875rem;font-size:.8125rem;color:var(--muted)}
+.popup-box__skip:hover{color:var(--charcoal)}
+
 /* LEFT-ALIGN OVERRIDES — elements that must not inherit .section centering */
 .pain__bullet,.pain__bullet div{text-align:left}
 .deliverables__item{text-align:left}

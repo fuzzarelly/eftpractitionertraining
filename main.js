@@ -60,3 +60,43 @@
     cObs.observe(statsEl);
   }
 })();
+
+(function(){
+  var popup=document.getElementById('quiz-popup');
+  if(!popup)return;
+  var STORAGE_KEY='eftQuizPopupShown';
+  var shown=false;
+  var timer;
+
+  function hasShown(){
+    try{return !!sessionStorage.getItem(STORAGE_KEY);}catch(e){return false;}
+  }
+  function markShown(){
+    try{sessionStorage.setItem(STORAGE_KEY,'1');}catch(e){}
+  }
+
+  function openPopup(){
+    if(shown||hasShown())return;
+    shown=true;
+    markShown();
+    clearTimeout(timer);
+    popup.classList.add('is-open');
+    requestAnimationFrame(function(){popup.classList.add('is-visible');});
+  }
+  function closePopup(){
+    popup.classList.remove('is-visible');
+    setTimeout(function(){popup.classList.remove('is-open');},250);
+  }
+
+  if(!hasShown()){
+    timer=setTimeout(openPopup,40000);
+    document.addEventListener('mouseout',function(e){
+      if(e.clientY<=0&&!e.relatedTarget){openPopup();}
+    });
+  }
+
+  document.getElementById('popup-close').addEventListener('click',closePopup);
+  document.getElementById('popup-skip').addEventListener('click',function(e){e.preventDefault();closePopup();});
+  popup.addEventListener('click',function(e){if(e.target===popup)closePopup();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&popup.classList.contains('is-open'))closePopup();});
+})();

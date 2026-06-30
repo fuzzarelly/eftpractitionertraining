@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Lora:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -33,6 +33,7 @@
   <div class="nav__inner">
     <a href="/" class="nav__logo" aria-label="EFT Practitioner Training home">EFT Practitioner Training</a>
     <nav class="nav__links" aria-label="Primary navigation">
+      <a href="quiz.html" class="nav__text-link"><i data-lucide="list-checks" style="width:14px;height:14px;vertical-align:middle;margin-right:6px;"></i>Take the Quiz</a>
       <a href="#guide" class="nav__text-link"><i data-lucide="globe" style="width:14px;height:14px;vertical-align:middle;margin-right:6px;"></i>Free Comparison Guide</a>
       <a href="#enrol" class="nav__btn nav__btn--sage">Enrol Now</a>
     </nav>
@@ -43,6 +44,7 @@
     </button>
   </div>
   <div class="nav__mobile" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="quiz.html"><i data-lucide="list-checks" style="width:14px;height:14px;vertical-align:middle;margin-right:6px;"></i>Take the Quiz</a>
     <a href="#guide"><i data-lucide="globe" style="width:14px;height:14px;vertical-align:middle;margin-right:6px;"></i>Free Comparison Guide</a>
     <a href="#enrol" class="nav__btn nav__btn--sage">Enrol Now</a>
   </div>
@@ -731,7 +733,21 @@
   </div>
 </footer>
 
-<script src="main.js?v=2"></script>
+<!-- ====================================================
+     QUIZ POPUP
+     ==================================================== -->
+<div class="popup-overlay" id="quiz-popup" role="dialog" aria-modal="true" aria-labelledby="popup-h3">
+  <div class="popup-box">
+    <button class="popup-close" id="popup-close" aria-label="Close popup">&times;</button>
+    <span class="label">Not sure yet?</span>
+    <h3 id="popup-h3">Is This Training Right For You?</h3>
+    <p>Take the free 60-second quiz and find out before you enrol. No email required.</p>
+    <a href="quiz.html" class="btn btn--primary">Take the Quiz</a>
+    <a href="#" class="popup-box__skip" id="popup-skip">No thanks, I'll keep browsing</a>
+  </div>
+</div>
+
+<script src="main.js?v=3"></script>
 <script>lucide.createIcons();</script>
 <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
 </body>
