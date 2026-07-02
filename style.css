@@ -363,6 +363,12 @@ p:last-child{margin-bottom:0}
 .quiz-result__body p+p{margin-top:.875rem}
 .quiz-result .cta-group{justify-content:center}
 .quiz-result__note{display:block;font-size:.8125rem;color:var(--muted);margin-top:1rem;font-style:italic}
+.quiz-result__guide-offer{background:var(--sage-light);border:1px solid rgba(79,128,112,.25);border-radius:var(--r-lg);padding:1.5rem;margin-top:1.75rem;text-align:center}
+.quiz-result__guide-offer .label{margin-bottom:.5rem}
+.quiz-result__guide-offer h3{font-size:1.0625rem;margin-bottom:.5rem;color:var(--charcoal)}
+.quiz-result__guide-offer p{font-size:.875rem;color:var(--muted);margin-bottom:1.125rem}
+.quiz-result__back{display:block;margin-top:1.25rem;font-size:.8125rem;color:var(--muted)}
+.quiz-result__back:hover{color:var(--sage)}
 .quiz-footer{text-align:center;margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--stone)}
 .quiz-footer p{font-size:.8125rem;color:var(--muted);margin-bottom:.5rem}
 .quiz-footer a{color:var(--sage);font-size:.8125rem}
