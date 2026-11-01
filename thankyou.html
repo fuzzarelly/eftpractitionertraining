@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2XZY4ZCYW"></script>
+  <!-- Tracking: GA4 main + legacy, Google Ads, Meta Pixel -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HFTYSBJ0B"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+    gtag('config', 'G-6HFTYSBJ0B', {
+      linker: { domains: ['michaelhetherington.com','healyourselfeft.com','healyourdigestioneft.com','eftpractitionertraining.com','mindbodymedicineacademy.onlinecoursehost.com','zylvie.com'], accept_incoming: true }
+    });
     gtag('config', 'G-N2XZY4ZCYW');
+    gtag('config', 'AW-1016615342');
   </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1017196089549728');
+    fbq('track', 'PageView');
+  </script>
+  <script src="track.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You — EFT Schools Comparison Guide | EFT Practitioner Training</title>
+  <title>Thank You - EFT Schools Comparison Guide | EFT Practitioner Training</title>
   <meta name="description" content="Your EFT Schools Comparison Guide is on its way. Check your inbox.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -282,7 +292,7 @@
     <span class="label">You're all set</span>
     <h1 id="ty-h1">Your comparison guide is on its way.</h1>
     <p class="ty-hero__lead">
-      Thank you for downloading the EFT Schools Comparison Guide. Please check your email inbox — we've sent the guide directly to you.
+      Thank you for downloading the EFT Schools Comparison Guide. Please check your email inbox. We've sent the guide directly to you.
     </p>
     <img src="assets/comparison-guide-image.png" alt="EFT Schools Comparison Guide" style="width:380px;max-width:100%;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,.3);margin:0 auto 1.5rem;display:block;">
     <div class="ty-hero__inbox" role="note">
@@ -371,7 +381,7 @@
       </div>
     </div>
     <div class="cta-group">
-      <a href="/#enrol" class="btn btn--primary">See what's included — $497</a>
+      <a href="/#enrol" class="btn btn--primary">See what's included - $497</a>
       <a href="/quiz.html" class="btn btn--ghost-dark">Take the Quiz First</a>
     </div>
   </div>
@@ -427,15 +437,15 @@
     <span class="label">Ready to take the next step?</span>
     <h2 id="cta-h2">Join 500+ students across 35+ countries</h2>
     <p class="ty-cta__sub">
-      The EFT Practitioner Training gives you the credential, the skills, and the confidence to work with clients professionally — in 3 to 6 months, fully online.
+      The EFT Practitioner Training gives you the credential, the skills, and the confidence to work with clients professionally, in 3 to 6 months, fully online.
     </p>
     <div class="cta-group">
-      <a href="/#enrol" class="btn btn--primary">Enrol Now — $497</a>
+      <a href="/#enrol" class="btn btn--primary">Enrol Now - $497</a>
       <a href="/quiz.html" class="btn btn--ghost-dark">Take the Quiz First</a>
     </div>
     <p class="ty-cta__guarantee">
       <i data-lucide="shield-check"></i>
-      14-day money-back guarantee — no questions asked
+      14-day money-back guarantee, no questions asked
     </p>
   </div>
 </section>
@@ -454,5 +464,14 @@
 
 <script src="main.js?v=3"></script>
 <script>lucide.createIcons();</script>
+<script>
+  (function () {
+    var LM = 'comparison_guide';
+    var key = 'lead_tracked_' + LM;
+    try { if (localStorage.getItem(key)) return; localStorage.setItem(key, '1'); } catch (e) {}
+    try { gtag('event', 'lead_magnet_signup', { lead_magnet: LM }); } catch (e) {}
+    try { fbq('track', 'Lead', { content_name: LM }); } catch (e) {}
+  })();
+</script>
 </body>
 </html>

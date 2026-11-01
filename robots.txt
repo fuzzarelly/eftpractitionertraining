@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eftpractitionertraining.com/sitemap.xml

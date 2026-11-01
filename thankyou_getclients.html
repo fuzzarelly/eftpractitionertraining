@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2XZY4ZCYW"></script>
+  <!-- Tracking: GA4 main + legacy, Google Ads, Meta Pixel -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HFTYSBJ0B"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+    gtag('config', 'G-6HFTYSBJ0B', {
+      linker: { domains: ['michaelhetherington.com','healyourselfeft.com','healyourdigestioneft.com','eftpractitionertraining.com','mindbodymedicineacademy.onlinecoursehost.com','zylvie.com'], accept_incoming: true }
+    });
     gtag('config', 'G-N2XZY4ZCYW');
+    gtag('config', 'AW-1016615342');
   </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1017196089549728');
+    fbq('track', 'PageView');
+  </script>
+  <script src="track.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>You're in! | 10 Ways to Get More EFT Clients</title>
@@ -301,5 +311,14 @@
   <p>Copyright 2026 eftpractitionertraining.com &nbsp;·&nbsp; <a href="mailto:info@michaelhetherington.com.au">Contact</a></p>
 </footer>
 
+<script>
+  (function () {
+    var LM = 'get_clients_guide';
+    var key = 'lead_tracked_' + LM;
+    try { if (localStorage.getItem(key)) return; localStorage.setItem(key, '1'); } catch (e) {}
+    try { gtag('event', 'lead_magnet_signup', { lead_magnet: LM }); } catch (e) {}
+    try { fbq('track', 'Lead', { content_name: LM }); } catch (e) {}
+  })();
+</script>
 </body>
 </html>

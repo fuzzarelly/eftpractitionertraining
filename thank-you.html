@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2XZY4ZCYW"></script>
+  <!-- Tracking: GA4 main + legacy, Google Ads, Meta Pixel -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HFTYSBJ0B"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+    gtag('config', 'G-6HFTYSBJ0B', {
+      linker: { domains: ['michaelhetherington.com','healyourselfeft.com','healyourdigestioneft.com','eftpractitionertraining.com','mindbodymedicineacademy.onlinecoursehost.com','zylvie.com'], accept_incoming: true }
+    });
     gtag('config', 'G-N2XZY4ZCYW');
+    gtag('config', 'AW-1016615342');
   </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1017196089549728');
+    fbq('track', 'PageView');
+  </script>
+  <script src="track.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -62,7 +73,7 @@
       <span style="font-family:'Outfit',system-ui,sans-serif;font-size:.6875rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#7FBFAD;display:block;margin-bottom:.5rem">Currently available at</span>
       <p style="font-family:'Outfit',system-ui,sans-serif;font-size:2.25rem;font-weight:500;color:var(--on-dark);line-height:1.1;margin-bottom:.3rem">$497 <span style="font-size:1rem;font-weight:400">USD</span></p>
       <p style="font-size:.875rem;color:var(--on-dark-m);margin-bottom:1.25rem">Full value $2990. Payment plan available.</p>
-      <a href="https://mindbodymedicineacademy.onlinecoursehost.com/courses/eft-practitioner-training" class="btn btn--primary" target="_blank" rel="noopener noreferrer" style="display:inline-block">Enrol Now</a>
+      <a href="https://zylvie.com/michaelhetherington/p/eft-practitioner-training" class="btn btn--primary" target="_blank" rel="noopener noreferrer" style="display:inline-block" data-cta="thankyou" data-plan="full">Enrol Now</a>
     </div>
 
     <p style="font-size:.875rem;color:var(--muted);text-align:center">Not quite ready? <a href="/quiz.html" style="color:var(--sage)">Take the 60-second quiz</a> first.</p>
@@ -81,5 +92,14 @@
 </footer>
 
 <script src="main.js"></script>
+<script>
+  (function () {
+    var LM = 'get_clients_guide';
+    var key = 'lead_tracked_' + LM;
+    try { if (localStorage.getItem(key)) return; localStorage.setItem(key, '1'); } catch (e) {}
+    try { gtag('event', 'lead_magnet_signup', { lead_magnet: LM }); } catch (e) {}
+    try { fbq('track', 'Lead', { content_name: LM }); } catch (e) {}
+  })();
+</script>
 </body>
 </html>

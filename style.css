@@ -389,7 +389,7 @@ p:last-child{margin-bottom:0}
 .popup-box__skip{display:block;margin-top:.875rem;font-size:.8125rem;color:var(--muted)}
 .popup-box__skip:hover{color:var(--charcoal)}
 
-/* LEFT-ALIGN OVERRIDES — elements that must not inherit .section centering */
+/* LEFT-ALIGN OVERRIDES: elements that must not inherit .section centering */
 .pain__bullet,.pain__bullet div{text-align:left}
 .deliverables__item{text-align:left}
 .not-for__item{text-align:left}

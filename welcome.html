@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Tracking: GA4 main + legacy, Google Ads, Meta Pixel -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HFTYSBJ0B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6HFTYSBJ0B', {
+      linker: { domains: ['michaelhetherington.com','healyourselfeft.com','healyourdigestioneft.com','eftpractitionertraining.com','mindbodymedicineacademy.onlinecoursehost.com','zylvie.com'], accept_incoming: true }
+    });
+    gtag('config', 'G-N2XZY4ZCYW');
+    gtag('config', 'AW-1016615342');
+  </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1017196089549728');
+    fbq('track', 'PageView');
+  </script>
+  <script src="track.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Welcome | EFT Practitioner Training</title>
+  <meta name="description" content="You're in. Here's how to start your EFT Practitioner Training.">
+</head>
+<body>
+
+<header class="nav" role="banner">
+  <div class="nav__inner">
+    <span class="nav__logo">EFT Practitioner Training</span>
+  </div>
+</header>
+
+
+<section class="hero" aria-labelledby="welcome-h1" style="min-height:360px">
+  <div class="hero__content">
+    <h1 id="welcome-h1">Welcome to the EFT Practitioner Training.</h1>
+    <p class="hero__sub">You're in. Here's how to start in the next 2 minutes.</p>
+  </div>
+</section>
+
+
+<section class="section" style="background:var(--warm-white)" aria-labelledby="welcome-h1">
+  <div class="container" style="max-width:600px">
+
+    <ol style="text-align:left;list-style:none;display:flex;flex-direction:column;gap:1rem;background:var(--stone);border-radius:var(--r-lg);padding:1.5rem;margin-bottom:2rem">
+      <li style="display:flex;gap:1rem;align-items:flex-start;font-size:.9375rem;color:var(--body)"><span style="font-family:'Outfit',system-ui,sans-serif;font-weight:500;color:#E8F4F0;background:var(--sage);border-radius:50%;width:2rem;height:2rem;flex-shrink:0;display:flex;align-items:center;justify-content:center">1</span><span>Check your email for "You're in: EFT Practitioner Training". It has your personal access link.</span></li>
+      <li style="display:flex;gap:1rem;align-items:flex-start;font-size:.9375rem;color:var(--body)"><span style="font-family:'Outfit',system-ui,sans-serif;font-weight:500;color:#E8F4F0;background:var(--sage);border-radius:50%;width:2rem;height:2rem;flex-shrink:0;display:flex;align-items:center;justify-content:center">2</span><span>Open that link and create your free student account. The link enrols you at no extra charge.</span></li>
+      <li style="display:flex;gap:1rem;align-items:flex-start;font-size:.9375rem;color:var(--body)"><span style="font-family:'Outfit',system-ui,sans-serif;font-weight:500;color:#E8F4F0;background:var(--sage);border-radius:50%;width:2rem;height:2rem;flex-shrink:0;display:flex;align-items:center;justify-content:center">3</span><span>Start Level 1, Module 1 tonight.</span></li>
+    </ol>
+
+    <div style="text-align:center;margin-bottom:1.5rem">
+      <a href="https://mindbodymedicineacademy.onlinecoursehost.com/courses/eft-practitioner-training" class="btn btn--primary" style="display:inline-block">Go to the course</a>
+    </div>
+
+    <p style="font-size:.875rem;color:var(--muted);text-align:center">Can't find the email? Check spam or promotions, or email <a href="mailto:info@michaelhetherington.com.au" style="color:var(--sage)">info@michaelhetherington.com.au</a> and we'll sort it the same day.</p>
+  </div>
+</section>
+
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <p class="footer__copy">Copyright 2026 eftpractitionertraining.com</p>
+    <nav class="footer__links" aria-label="Footer links">
+      <a href="https://www.michaelhetherington.com/terms-and-conditions-eft-training-1" class="footer__link" target="_blank" rel="noopener noreferrer">Terms</a>
+      <a href="mailto:info@michaelhetherington.com.au" class="footer__link">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var p = new URLSearchParams(location.search);
+    var value = parseFloat(p.get('v')) || 497;
+    var txn = p.get('t') || '';
+    var isPlan = p.get('plan') === '1';
+    var key = 'purchase_tracked_welcome_' + (txn || (isPlan ? 'plan' : 'full'));
+    try { if (localStorage.getItem(key)) return; localStorage.setItem(key, '1'); } catch (e) {}
+    gtag('event', 'conversion', {
+      send_to: 'AW-1016615342/ALsDCIH2k6UdEK6j4eQD',
+      value: value, currency: 'USD', transaction_id: txn
+    });
+    if (isPlan) {
+      gtag('event', 'purchase', { transaction_id: 'plan_' + Date.now(), value: value, currency: 'USD',
+        items: [{ item_name: 'EFT Practitioner Training (payment plan)', price: value, quantity: 1 }] });
+      fbq('track', 'Purchase', { value: value, currency: 'USD', content_name: 'EFT Practitioner Training (payment plan)' });
+    }
+  })();
+</script>
+</body>
+</html>
