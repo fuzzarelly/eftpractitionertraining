@@ -78,7 +78,9 @@
 <script>
   (function () {
     var p = new URLSearchParams(location.search);
-    var value = parseFloat(p.get('v')) || 497;
+    var vRaw = p.get('v');
+    var value = vRaw !== null ? parseFloat(vRaw) : 497;
+    if (!value || value <= 0) return;
     var txn = p.get('t') || '';
     var isPlan = p.get('plan') === '1';
     var key = 'purchase_tracked_welcome_' + (txn || (isPlan ? 'plan' : 'full'));
