@@ -83,6 +83,9 @@
     if (!value || value <= 0) return;
     var txn = p.get('t') || '';
     var isPlan = p.get('plan') === '1';
+    // Only the Stripe payment plan is tracked here. The full $497 is sold on
+    // Zylvie, whose Success page fires the Google Ads purchase.
+    if (!isPlan) return;
     var key = 'purchase_tracked_welcome_' + (txn || (isPlan ? 'plan' : 'full'));
     try { if (localStorage.getItem(key)) return; localStorage.setItem(key, '1'); } catch (e) {}
     gtag('event', 'conversion', {
